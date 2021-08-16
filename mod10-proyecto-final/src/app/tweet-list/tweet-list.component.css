@@ -1,0 +1,14 @@
+.toolbar {
+    margin-bottom: 20px;
+}
+
+.add-button{
+    color: white;
+    position: absolute;
+    right: 100px;
+
+}
+
+.add-icon{
+    color: white;
+}

@@ -1,0 +1,13 @@
+<mat-toolbar color="primary" class="toolbar">
+    <span >Nuevo Tweet</span>
+
+</mat-toolbar>
+<div mat-dialog-content>
+    <mat-form-field appearance="fill" class="form-field">
+        <input matInput name="new tweet" placeholder="¿Qué estás pensando?" [(ngModel)]="newTweet">
+    </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancelar</button>
+  <button mat-button [mat-dialog-close]="newTweet">Publicar Tweet</button>
+</div>

@@ -1,0 +1,13 @@
+<mat-toolbar color="primary" class="toolbar">
+    <mat-toolbar-row>
+      <span>MiniTwitter</span>
+
+      <button mat-icon-button color="primary" class="add-button" (click)="createNewTweet()">
+        <mat-icon class="add-icon" >add_circle</mat-icon> Nuevo Tweet
+      </button>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<app-tweet-item *ngFor="let currentTweet of selectedTweet" [tweet]="currentTweet" (tweetSelected)="setfavTweet($event)"></app-tweet-item>
+
+
